@@ -1,0 +1,57 @@
+{
+  "name": "@skarab/detect-package-manager",
+  "version": "0.0.0-development",
+  "description": "Scaffolded with @skarab/skaffold",
+  "author": {
+    "name": "skarab42",
+    "email": "skarab@bluewin.ch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/skarab42/detect-package-manager.git"
+  },
+  "homepage": "https://github.com/skarab42/detect-package-manager",
+  "bugs": "https://github.com/skarab42/detect-package-manager/issues",
+  "funding": "https://github.com/sponsors/skarab42",
+  "license": "MIT",
+  "type": "module",
+  "exports": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "private": true,
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "tsc -p ./tsconfig.build.json",
+    "check": "tsc -p ./tsconfig.json",
+    "lint": "eslint --max-warnings=0 .",
+    "format": "prettier --check .",
+    "check-lint-format": "pnpm check && pnpm lint && pnpm format",
+    "test": "pnpm check-lint-format && pnpm vitest run",
+    "prepare": "npx simple-git-hooks",
+    "release": "semantic-release --branches main"
+  },
+  "devDependencies": {
+    "@skarab/eslint-config": "^1.1.0",
+    "@skarab/prettier-config": "^1.2.2",
+    "@skarab/typescript-config": "^1.1.0",
+    "@types/node": "^18.6.3",
+    "eslint": "^8.20.0",
+    "lint-staged": "^13.0.3",
+    "prettier": "^2.7.1",
+    "semantic-release": "^19.0.3",
+    "simple-git-hooks": "^2.8.0",
+    "typescript": "^4.7.4",
+    "vite-plugin-vitest-typescript-assert": "^1.1.4",
+    "vitest": "^0.20.2"
+  },
+  "engines": {
+    "node": ">=14",
+    "pnpm": ">=7"
+  },
+  "packageManager": "pnpm@7.6.0",
+  "keywords": []
+}
