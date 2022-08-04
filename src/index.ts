@@ -1,1 +1,2 @@
-export const api = { life: 42 };
+export * from './process.js';
+export * from './version.js';
