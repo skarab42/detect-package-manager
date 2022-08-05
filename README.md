@@ -6,7 +6,7 @@ Detects which package manager (bun, pnpm, yarn, npm) is used based on the curren
 
 - Support `packageManager` field in `package.json`.
 - Detect PM agent version from lock file name, format or version.
-- Fully typed and well tested!
+- No dependency, fully typed and well tested!
 
 _TODO_
 
