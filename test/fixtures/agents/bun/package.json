@@ -1,0 +1,7 @@
+{
+  "name": "test-fixtures-bun",
+  "packageManager": "bun@0.1.6",
+  "dependencies": {
+    "@types/node": "^18.6.4"
+  }
+}

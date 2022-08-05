@@ -1,0 +1,7 @@
+{
+  "name": "test-fixtures-yarn",
+  "packageManager": "yarn@1.22.17",
+  "dependencies": {
+    "@types/node": "^18.6.4"
+  }
+}
