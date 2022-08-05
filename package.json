@@ -17,9 +17,9 @@
   "type": "module",
   "exports": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "private": true,
+  "private": false,
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "files": [
     "lib"
