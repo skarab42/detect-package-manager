@@ -1,7 +1,7 @@
 {
   "name": "@skarab/detect-package-manager",
   "version": "0.0.0-development",
-  "description": "Scaffolded with @skarab/skaffold",
+  "description": "Detects which package manager (bun, pnpm, yarn, npm) to use based on the current working directory.",
   "author": {
     "name": "skarab42",
     "email": "skarab@bluewin.ch"
@@ -53,5 +53,14 @@
     "pnpm": ">=7"
   },
   "packageManager": "pnpm@7.6.0",
-  "keywords": []
+  "keywords": [
+    "package-manager",
+    "packageManager",
+    "lock-file",
+    "lockFile",
+    "pnpm",
+    "yarn",
+    "bun",
+    "npm"
+  ]
 }
