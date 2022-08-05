@@ -20,6 +20,8 @@ pnpm add @skarab/detect-package-manager
 
 ## Usage
 
+Detect the PM agent from the current working directory.
+
 ```ts
 import { detectAgent } from '@skarab/detect-package-manager';
 
@@ -28,8 +30,20 @@ const agent = await detectAgent();
 console.log(agent); // { name: 'pnpm', version: '7.6.0' }
 ```
 
+Detect the PM agent from a provided directory.
+
 ```ts
 import { detectAgent } from '@skarab/detect-package-manager';
+
+const agent = await detectAgent('path/to/yarn/project');
+
+console.log(agent); // { name: 'yarn', version: '1.22.17' }
+```
+
+Detect all installed and [known](#known-agents) agents.
+
+```ts
+import { detectInstalledAgents } from '@skarab/detect-package-manager';
 
 const agents = await api.detectInstalledAgents();
 
@@ -41,6 +55,13 @@ console.log(agents.has('pnpm')); // true
 //   'npm' => { name: 'npm', version: '8.13.2' }
 // }
 ```
+
+## Known agents
+
+- [bun](https://bun.sh/) Bun is a fast all-in-one JavaScript runtime.
+- [pnpm](https://pnpm.io/) Fast, disk space efficient package manager.
+- [yarn](https://yarnpkg.com/) Yarn is a package manager that doubles down as project manager.
+- [npm](https://www.npmjs.com/package/npm) A JavaScript package manager.
 
 ## Related
 
