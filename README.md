@@ -1,6 +1,6 @@
 # @skarab/detect-package-manager
 
-Detects which package manager (bun, pnpm, yarn, npm) to use based on the current working directory.
+Detects which package manager (bun, pnpm, yarn, npm) is used based on the current working directory.
 
 ## Features
 
