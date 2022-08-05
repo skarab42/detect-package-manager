@@ -44,7 +44,10 @@ export async function walkDirectoryUp<ReturnType>(
  * @param fileName file name or array of file name to search.
  * @param directory the directory where the search begins, default to current working directory.
  */
-export async function findFile(fileName: string | string[], directory = process.cwd()): Promise<string | undefined> {
+export async function findFile(
+  fileName: string | readonly string[],
+  directory = process.cwd(),
+): Promise<string | undefined> {
   if (typeof fileName === 'string') {
     const path = pathResolve(directory, fileName);
 
